@@ -15,9 +15,14 @@ class BankAccount:
     def get_balance(self):
         return self.__balance
 
-account = BankAccount(1234, 1000)
-account.deposit(1000)
-account.withdraw(5000)
-account.withdraw(500)
+bank_account = BankAccount(1234, 1000)
+# After Account Created
+print(bank_account.get_balance())
 
-print(account.get_balance())
+# Deposit 1000
+bank_account.deposit(1000)
+print(bank_account.get_balance())
+
+# Withdraw 500
+bank_account.withdraw(500)
+print(bank_account.get_balance())
